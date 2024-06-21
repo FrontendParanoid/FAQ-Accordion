@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+*
+{
+  margin: 0px 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+  font-family: 'Work Sans';
+}
+@media screen and (max-width: 1920px)
+{
+  body
+  {
+    font-size: 16px;
+    background: url('/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:hsl(275, 100%, 97%);
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  body
+  {
+    font-size: 16px;
+    background: url('/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:hsl(275, 100%, 97%);
+  }
+}
+

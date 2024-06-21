@@ -1,0 +1,10 @@
+<div *ngFor="let faq of faqs" class="faq-item">
+  <div class="faq-question">
+    <p (click)="Answer(faq.id)">{{ faq.question }}<p>
+    <button (click)="Answer(faq.id)" ><img [src]="faq.hidden ? 'images/icon-plus.svg' : 'images/icon-minus.svg'"></button>
+  </div>
+  <p class="faq-answer" [hidden]="faq.hidden">{{ faq.answer }}</p>
+  <hr *ngIf="faq.id != faqs.length else stop" class="line">
+  <ng-template #stop>
+  </ng-template>
+</div>
